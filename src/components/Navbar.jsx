@@ -66,7 +66,7 @@ const Navbar = () => {
         <ul
           className={`${
             navOpen ? "flex" : "hidden"
-          } flex-col gap-y-2 absolute top-4 left-2 right-2 md:hidden bg-gray-900 border rounded-md text-gray-200 p-4`}
+          } flex-col gap-y-2 absolute z-50 top-4 left-2 right-2 md:hidden bg-gray-900 border rounded-md text-gray-200 p-4`}
         >
           {/* close btn */}
           <button

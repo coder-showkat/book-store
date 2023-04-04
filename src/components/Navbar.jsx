@@ -87,6 +87,7 @@ const Navbar = () => {
           </li>
           <li className="px-2 text-lg hover:text-[#ff9e9d]">
             <NavLink
+              onClick={() => setNavOpen(false)}
               to="/"
               className={({ isActive }) =>
                 isActive ? "text-[#ff9190] font-medium" : ""
@@ -97,6 +98,7 @@ const Navbar = () => {
           </li>
           <li className="px-2 text-lg hover:text-[#ff9e9d]">
             <NavLink
+              onClick={() => setNavOpen(false)}
               to="/store"
               className={({ isActive }) =>
                 isActive ? "text-[#ff9190] font-medium" : ""
@@ -107,6 +109,7 @@ const Navbar = () => {
           </li>
           <li className="px-2 text-lg hover:text-[#ff9e9d]">
             <NavLink
+              onClick={() => setNavOpen(false)}
               to="/about"
               className={({ isActive }) =>
                 isActive ? "text-[#ff9190] font-medium" : ""

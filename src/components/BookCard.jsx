@@ -24,8 +24,8 @@ const BookCard = ({ book }) => {
         }`}
       >
         <div className="h-full p-6 flex flex-col justify-between gap-y-6">
-          <h3 className="text-xl font-semibold">{title}</h3>
-          <p className="hidden md:block">{subtitle}</p>
+          <h3 className="text-xl font-semibold">{title.slice(0, 21)}...</h3>
+          <p className="block">{subtitle.slice(0, 37)}...</p>
           <p className="mt-auto">Price: {price}</p>
         </div>
       </div>

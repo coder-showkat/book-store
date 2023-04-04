@@ -1,3 +1,5 @@
+import { faBookOpen } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
@@ -12,8 +14,8 @@ const Navbar = () => {
       <div className="container mx-auto p-4 flex justify-between items-center gap-x-6">
         {/* logo */}
         <Link to="/" className="flex items-center gap-x-2">
-          <span className="text-2xl text-[#ff9190] self-end mt-2">
-            <ion-icon name="book"></ion-icon>
+          <span className="text-xl text-[#ff9190]">
+            <FontAwesomeIcon className="align-middle" icon={faBookOpen} />
           </span>
           <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-br from-[#5e72eb] to-[#ff9190]">
             SAM

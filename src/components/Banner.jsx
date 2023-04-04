@@ -1,3 +1,5 @@
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Lottie from "lottie-react";
 import React from "react";
 import { Link } from "react-router-dom";
@@ -24,7 +26,7 @@ const Banner = () => {
             to="/store"
             className="bg-blue-400 text-gray-900 px-6 flex items-center gap-x-2 py-2 rounded-md text-lg font-medium"
           >
-            Visit store <ion-icon name="cart"></ion-icon>
+            Visit store <FontAwesomeIcon icon={faShoppingCart} />
           </Link>
           <Link
             to="/about"

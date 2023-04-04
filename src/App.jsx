@@ -8,6 +8,7 @@ import {
 import About from "./components/About";
 import Banner from "./components/Banner";
 import Book from "./components/Book";
+import ErrorPage from "./components/ErrorPage";
 import Navbar from "./components/Navbar";
 import Spinner from "./components/Spinner";
 import Store from "./components/Store";
@@ -26,6 +27,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",

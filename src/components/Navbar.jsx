@@ -1,4 +1,4 @@
-import { faBookOpen } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faBookOpen, faClose } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
@@ -23,11 +23,8 @@ const Navbar = () => {
         </Link>
 
         {/* menu btn */}
-        <button
-          onClick={toggler}
-          className="md:hidden text-3xl text-gray-300 mt-1"
-        >
-          <ion-icon name="menu"></ion-icon>
+        <button onClick={toggler} className="md:hidden text-2xl text-gray-300">
+          <FontAwesomeIcon icon={faBars} />
         </button>
 
         {/* form medium and larger device */}
@@ -75,7 +72,7 @@ const Navbar = () => {
             onClick={toggler}
             className="text-2xl absolute top-4 right-4 text-gray-200"
           >
-            <ion-icon name="close"></ion-icon>
+            <FontAwesomeIcon icon={faClose} />
           </button>
           <li className="px-2 w-fit">
             <Link to="/" className="flex items-center gap-x-2">

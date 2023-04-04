@@ -11,7 +11,7 @@ const About = () => {
         those original thoughts of his aren’t very new after all. The man who
         does not read good books is no better than the man who can’t.
       </p>
-      <div className="grid text-justify grid-cols-1 md:grid-cols-2 gap-10">
+      <div className="grid md:text-justify grid-cols-1 md:grid-cols-2 gap-10">
         <div className="flex flex-col gap-y-8">
           <div className="flex flex-col gap-y-4">
             <h3 className="text-2xl font-semibold">
